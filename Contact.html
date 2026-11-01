@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JFC Kitchen | Contact</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="JFC.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="Index.html">JFC Kitchen</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="Index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="Recipes.html">Recipes</a></li>
+            <li class="nav-item"><a class="nav-link active" href="Contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="page-banner">
+      <div class="container py-5 text-center">
+        <p class="eyebrow">Get in Touch</p>
+        <h1 class="display-5 fw-bold">Contact JFC Kitchen</h1>
+      </div>
+    </header>
+
+    <main class="container py-5">
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-5">
+          <div class="contact-card p-4">
+            <h3 class="mb-3">Email us</h3>
+            <ul class="list-unstyled contact-list">
+              <li><a href="mailto:jeremiahphilemon03@gmail.com">jeremiahphilemon03@gmail.com</a></li>
+              <li><a href="mailto:kuyefisayomi43@gmail.com">kuyefisayomi43@gmail.com</a></li>
+            </ul>
+            <p class="mb-0">We’d love to hear from you about catering, recipe requests, and delicious collaborations.</p>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="contact-card p-4">
+            <h3 class="mb-3">Send a Message</h3>
+            <form id="contactForm">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" name="name" class="form-control" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-control" required />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Send Message</button>
+              <div id="formMessage" class="mt-3 text-success fw-semibold" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer text-white text-center py-4">
+      <div class="container">
+        <p class="mb-0">&copy; <span id="year"></span> JFC Kitchen. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JFC.js"></script>
+  </body>
+</html>
